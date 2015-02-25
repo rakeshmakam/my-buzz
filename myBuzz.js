@@ -379,9 +379,9 @@ function(BaseView, Vent, Config, Tpl, ActivityFeedsCollections, RemixPostModel, 
         setSelectedLayout: function(e){
             // $('.feeds-content').removeClass('position-relative');
             // $('.feed-data').removeClass('position-absolute');
-        	// QUESTION: Can this all just be converted to a freewall setting
-        	// via the number of columns? Why are we rewriting the templates again?
-        	
+            // QUESTION: Can this all just be converted to a freewall setting
+            // via the number of columns? Why are we rewriting the templates again?
+            
             $(e.target).siblings().removeClass('layout-options-bg');
             $(e.target).addClass('layout-options-bg');
             this.selectedLayout = $(e.target).attr('data-selected-layout-option');
